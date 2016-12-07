@@ -1,0 +1,52 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 400px;
+}
+
+fieldset, img {  
+  border: 0; 
+  } 
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0;
+}
+
+.thead{
+  background-color:slategrey;
+} 
+
+.container{
+    padding:30px;
+}
+
+.textCenter > td{
+    text-align:center;
+    font-weight: bold;
+}
+.path{
+    color: #526F4D;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.whiteCenter > th{
+    text-align:center;
+    color: white;
+}
+
+td img{
+    width: 27px;
+    height: 27px;
+}
+
+.pathLabel{
+    color: dimgrey;
+    font-weight:bold;
+}
+
+.tableFiles td:hover{
+    background-color: lightgray;
+}

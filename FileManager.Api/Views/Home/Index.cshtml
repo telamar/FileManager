@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" ng-app="fileManagerApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/bundles/bootstrap")
+</head>
+<body ng-controller="fileDataController as vm" ng-init="vm.initializeFileList()">
+    <div class="container">
+        <section>
+            <table class="table table-bordered">
+                <thead class="thead">
+                    <tr class="whiteCenter">
+                        <th>Less 10Mb</th>
+                        <th>10Mb-50Mb</th>
+                        <th>More 100Mb</th>
+                    </tr>
+                </thead>
+                <tbody ng-switch="vm.loadGif">
+                    <tr class="textCenter" ng-switch-when="false">
+                        <td><img src="~/Content/img/5.gif" alt="loading" /></td>
+                        <td><img src="~/Content/img/5.gif" alt="loading" /></td>
+                        <td><img src="~/Content/img/5.gif" alt="loading" /></td>
+                    </tr>
+                    <tr class="textCenter" ng-switch-when="true">
+                        <td>{{vm.fileQuantity.QuantityFilesSizeLessThen}}</td>
+                        <td>{{vm.fileQuantity.QuantityFilesSizeBetween}}</td>
+                        <td>{{vm.fileQuantity.QuantityFilesSizeMoreThen}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <span class="pathLabel">Current Path:</span><p class="path">{{vm.fileList.CurrentPath}}</p>
+            <table class="table table-bordered tableFiles">
+                <tr>
+                    <td ng-click="vm.moveToLastDir()"><span>...</span></td>
+                </tr>
+                <tr ng-repeat="dir in vm.fileList.DirectoryNames">
+                    <td ng-click="vm.moveToDir(dir)">
+                        <img src="~/Content/img/Empty-Folder-icon.png" alt="logo">
+                        <span>{{dir}}</span>
+                    </td>
+                </tr>
+                <tr ng-repeat="file in vm.fileList.FileNames">
+                    <td>
+                        <img src="~/Content/img/text-file-3-24.png" alt="logo" />
+                        <span>{{file}}</span>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    @Scripts.Render("~/Scripts/angular.min.js")
+    @Scripts.Render("~/Scripts/angular-resource.min.js")
+    @Scripts.Render("~/angular/app")
+</body>
+</html>

@@ -1,0 +1,5 @@
+D:\vsprojects2015\FileManager.Api\FileManager.Api.FileData\bin\Debug\FileManager.Api.FileData.dll
+D:\vsprojects2015\FileManager.Api\FileManager.Api.FileData\bin\Debug\FileManager.Api.FileData.pdb
+D:\vsprojects2015\FileManager.Api\FileManager.Api.FileData\obj\Debug\FileManager.Api.FileData.csprojResolveAssemblyReference.cache
+D:\vsprojects2015\FileManager.Api\FileManager.Api.FileData\obj\Debug\FileManager.Api.FileData.dll
+D:\vsprojects2015\FileManager.Api\FileManager.Api.FileData\obj\Debug\FileManager.Api.FileData.pdb

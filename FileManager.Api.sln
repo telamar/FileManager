@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager.Api", "FileManager.Api\FileManager.Api.csproj", "{E4CA892A-567A-4CF5-8A5D-C8E94DCD6766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager.Api.FileData", "FileManager.Api.FileData\FileManager.Api.FileData.csproj", "{EB86BEA0-4E4A-4C2B-AA65-B20D45D9B5E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{515494C7-2707-4F78-AB03-A534186565B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4CA892A-567A-4CF5-8A5D-C8E94DCD6766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4CA892A-567A-4CF5-8A5D-C8E94DCD6766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4CA892A-567A-4CF5-8A5D-C8E94DCD6766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4CA892A-567A-4CF5-8A5D-C8E94DCD6766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB86BEA0-4E4A-4C2B-AA65-B20D45D9B5E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB86BEA0-4E4A-4C2B-AA65-B20D45D9B5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB86BEA0-4E4A-4C2B-AA65-B20D45D9B5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB86BEA0-4E4A-4C2B-AA65-B20D45D9B5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
